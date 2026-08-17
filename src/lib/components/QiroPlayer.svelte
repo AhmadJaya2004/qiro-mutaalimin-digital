@@ -93,6 +93,7 @@
 		{#if item.type === 'verse'}
 			<p class="text-gray-500 font-medium text-sm mt-1">Ayat {item.verseNumber} / 5</p>
 		{/if}
+		<p class="text-xs text-gray-400 mt-2 font-medium">Qari: Muhammad Ghazi Al-Ghifari</p>
 	</div>
 
 	<!-- Arabic Text Container -->

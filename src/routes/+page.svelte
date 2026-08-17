@@ -25,7 +25,7 @@
 </script>
 
 <svelte:head>
-	<title>Qiro' Digital - TPQ Bu Suprih</title>
+	<title>Qiro' Digital - TPQ Al-Mutaalimin</title>
 </svelte:head>
 
 <VerseNavigation 
