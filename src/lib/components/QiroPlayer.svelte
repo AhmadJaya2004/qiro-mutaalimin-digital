@@ -91,15 +91,15 @@
 	<div class="text-center mb-8 w-full mt-4">
 		<h2 class="text-brand font-bold text-lg uppercase tracking-wider">{item.title}</h2>
 		{#if item.type === 'verse'}
-			<p class="text-gray-500 font-medium text-sm mt-1">Ayat {item.verseNumber} / 5</p>
+			<p class="text-gray-500 dark:text-gray-400 font-medium text-sm mt-1">Ayat {item.verseNumber} / 5</p>
 		{/if}
-		<p class="text-xs text-gray-400 mt-2 font-medium">Qari: Muhammad Ghazi Al-Ghifari</p>
+		<p class="text-xs text-gray-400 dark:text-gray-500 mt-2 font-medium">Qari: Muhammad Ghazi Al-Ghifari</p>
 	</div>
 
 	<!-- Arabic Text Container -->
 	<div class="w-full flex-1 flex items-center justify-center min-h-[150px] mb-8">
 		<p 
-			class="font-arabic text-3xl sm:text-4xl text-center leading-[1.8] sm:leading-[1.8] text-gray-800"
+			class="font-arabic text-3xl sm:text-4xl text-center leading-[1.8] sm:leading-[1.8] text-gray-800 dark:text-gray-100"
 			dir="rtl"
 		>
 			{item.arabic}
@@ -118,12 +118,12 @@
 	></audio>
 
 	<!-- Player Controls -->
-	<div class="w-full bg-white/50 backdrop-blur-sm rounded-2xl p-5 shadow-sm border border-brand/10">
+	<div class="w-full bg-white/50 dark:bg-black/20 backdrop-blur-sm rounded-2xl p-5 shadow-sm border border-brand/10 dark:border-brand/20">
 		
 		<!-- Top Options (Repeat & Auto Next) -->
-		<div class="flex justify-between items-center mb-4 text-xs font-medium text-gray-500">
+		<div class="flex justify-between items-center mb-4 text-xs font-medium text-gray-500 dark:text-gray-400">
 			<button 
-				class="flex items-center gap-1.5 px-2 py-1.5 rounded-md transition-colors {repeatValue > 1 ? 'bg-brand/10 text-brand' : 'hover:bg-gray-100'}"
+				class="flex items-center gap-1.5 px-2 py-1.5 rounded-md transition-colors {repeatValue > 1 ? 'bg-brand/10 text-brand dark:text-emerald-400' : 'hover:bg-gray-100 dark:hover:bg-white/5'}"
 				onclick={toggleRepeat}
 			>
 				<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="m7 22-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></svg>
@@ -134,10 +134,10 @@
 			</button>
 
 			<label class="flex items-center gap-2 cursor-pointer">
-				<span class="uppercase tracking-wide text-[10px] {autoNext ? 'text-brand' : 'text-gray-400'}">Auto Lanjut</span>
+				<span class="uppercase tracking-wide text-[10px] {autoNext ? 'text-brand dark:text-emerald-400' : 'text-gray-400 dark:text-gray-500'}">Auto Lanjut</span>
 				<div class="relative">
 					<input type="checkbox" bind:checked={autoNext} class="sr-only" />
-					<div class="block w-8 h-4.5 rounded-full {autoNext ? 'bg-brand' : 'bg-gray-200'} transition-colors"></div>
+					<div class="block w-8 h-4.5 rounded-full {autoNext ? 'bg-brand' : 'bg-gray-200 dark:bg-gray-700'} transition-colors"></div>
 					<div class="dot absolute left-0.5 top-0.5 bg-white w-3.5 h-3.5 rounded-full transition-transform {autoNext ? 'translate-x-3.5' : ''}"></div>
 				</div>
 			</label>
@@ -151,9 +151,9 @@
 				max={duration || 100} 
 				value={currentTime} 
 				oninput={handleSeek}
-				class="w-full h-1.5 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-brand"
+				class="w-full h-1.5 bg-gray-200 dark:bg-gray-700 rounded-lg appearance-none cursor-pointer accent-brand"
 			/>
-			<div class="flex justify-between text-xs text-gray-400 mt-1.5 font-medium">
+			<div class="flex justify-between text-xs text-gray-400 dark:text-gray-500 mt-1.5 font-medium">
 				<span>{formatTime(currentTime)}</span>
 				<span>{formatTime(duration)}</span>
 			</div>
@@ -162,7 +162,7 @@
 		<!-- Main Playback Buttons -->
 		<div class="flex items-center justify-between px-2">
 			<button 
-				class="p-2 text-gray-400 hover:text-brand transition-colors disabled:opacity-30" 
+				class="p-2 text-gray-400 hover:text-brand dark:hover:text-emerald-400 transition-colors disabled:opacity-30" 
 				disabled={isFirst}
 				onclick={onPrev}
 				aria-label="Sebelumnya"
@@ -185,7 +185,7 @@
 			</button>
 
 			<button 
-				class="p-2 text-gray-400 hover:text-brand transition-colors disabled:opacity-30" 
+				class="p-2 text-gray-400 hover:text-brand dark:hover:text-emerald-400 transition-colors disabled:opacity-30" 
 				disabled={isLast}
 				onclick={onNext}
 				aria-label="Berikutnya"

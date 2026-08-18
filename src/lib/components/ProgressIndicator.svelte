@@ -13,12 +13,12 @@
 			<div 
 				class="rounded-full transition-all duration-300
 				{i === current ? 'w-2 h-2 bg-brand scale-125' : 
-				 i < current ? 'w-1.5 h-1.5 bg-brand-light/50' : 
-				 'w-1.5 h-1.5 bg-gray-300'}"
+				 i < current ? 'w-1.5 h-1.5 bg-brand-light/50 dark:bg-brand-light/70' : 
+				 'w-1.5 h-1.5 bg-gray-300 dark:bg-gray-600'}"
 			></div>
 		</div>
 		{#if i < total - 1}
-			<div class="w-2 h-[1px] {i < current ? 'bg-brand-light/30' : 'bg-gray-200'}"></div>
+			<div class="w-2 h-[1px] {i < current ? 'bg-brand-light/30 dark:bg-brand-light/50' : 'bg-gray-200 dark:bg-gray-700'}"></div>
 		{/if}
 	{/each}
 </div>

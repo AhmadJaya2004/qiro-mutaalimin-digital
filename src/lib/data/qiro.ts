@@ -15,14 +15,14 @@ export const qiroItems: QiroItem[] = [
 		type: 'taawwudz',
 		title: "Ta'awwudz",
 		arabic: 'أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ',
-		audio: '/audio/taawwudz.mp3'
+		audio: '/audio/taawwudz.mpeg'
 	},
 	{
 		id: 'basmalah',
 		type: 'basmalah',
 		title: 'Basmalah',
 		arabic: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ',
-		audio: '/audio/basmalah.mp3'
+		audio: '/audio/bismillah.mpeg'
 	},
 	{
 		id: 'anfal-1',
@@ -30,7 +30,7 @@ export const qiroItems: QiroItem[] = [
 		title: 'Surat Al-Anfal',
 		verseNumber: 1,
 		arabic: 'يَسْأَلُونَكَ عَنِ الْأَنفَالِ ۖ قُلِ الْأَنفَالُ لِلَّهِ وَالرَّسُولِ ۖ فَاتَّقُوا اللَّهَ وَأَصْلِحُوا ذَاتَ بَيْنِكُمْ ۖ وَأَطِيعُوا اللَّهَ وَرَسُولَهُ إِن كُنتُم مُّؤْمِنِينَ',
-		audio: '/audio/al-anfal/01.mp3'
+		audio: '/audio/al-anfal/01.mpeg'
 	},
 	{
 		id: 'anfal-2',
@@ -38,7 +38,7 @@ export const qiroItems: QiroItem[] = [
 		title: 'Surat Al-Anfal',
 		verseNumber: 2,
 		arabic: 'إِنَّمَا الْمُؤْمِنُونَ الَّذِينَ إِذَا ذُكِرَ اللَّهُ وَجِلَتْ قُلُوبُهُمْ وَإِذَا تُلِيَتْ عَلَيْهِمْ آيَاتُهُ زَادَتْهُمْ إِيمَانًا وَعَلَىٰ رَبِّهِمْ يَتَوَكَّلُونَ',
-		audio: '/audio/al-anfal/02.mp3'
+		audio: '/audio/al-anfal/02.mpeg'
 	},
 	{
 		id: 'anfal-3',
@@ -46,7 +46,7 @@ export const qiroItems: QiroItem[] = [
 		title: 'Surat Al-Anfal',
 		verseNumber: 3,
 		arabic: 'الَّذِينَ يُقِيمُونَ الصَّلَاةَ وَمِمَّا رَزَقْنَاهُمْ يُنفِقُونَ',
-		audio: '/audio/al-anfal/03.mp3'
+		audio: '/audio/al-anfal/03.mpeg'
 	},
 	{
 		id: 'anfal-4',
@@ -54,7 +54,7 @@ export const qiroItems: QiroItem[] = [
 		title: 'Surat Al-Anfal',
 		verseNumber: 4,
 		arabic: 'أُولَٰئِكَ هُمُ الْمُؤْمِنُونَ حَقًّا ۚ لَّهُمْ دَرَجَاتٌ عِندَ رَبِّهِمْ وَمَغْفِرَةٌ وَرِزْقٌ كَرِيمٌ',
-		audio: '/audio/al-anfal/04.mp3'
+		audio: '/audio/al-anfal/04.mpeg'
 	},
 	{
 		id: 'anfal-5',
@@ -62,6 +62,6 @@ export const qiroItems: QiroItem[] = [
 		title: 'Surat Al-Anfal',
 		verseNumber: 5,
 		arabic: 'كَمَا أَخْرَجَكَ رَبُّكَ مِن بَيْتِكَ بِالْحَقِّ وَإِنَّ فَرِيقًا مِّنَ الْمُؤْمِنِينَ لَكَارِهُونَ',
-		audio: '/audio/al-anfal/05.mp3'
+		audio: '/audio/al-anfal/05.mpeg'
 	}
 ];
